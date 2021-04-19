@@ -24,11 +24,11 @@ Coded alongside my classmates in Code Fellows seatt-c-301d73
 --- 
 # Time Estimates
 
-Name of feature: ________________________________
+Name of feature: Adding locations, map, error
 
-Estimate of time needed to complete: _____
+Estimate of time needed to complete: 3 hours
 
-Start time: _____
+Start time: 1:30
 
 Finish time: _____
 
