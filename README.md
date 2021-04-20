@@ -1,7 +1,7 @@
 # City Explorer
 
 **Author**: Tim Egorov
-**Version**: 1.0.0 (increment the patch/fix version number if you make more commits past your first submission)
+**Version**: 1.2.0 (increment the patch/fix version number if you make more commits past your first submission)
 
 ## Overview
 This app allows a user to enter the name of a city, see the longitude/latitude of that city, and view a map of that location. The app will also display an error message, prompting the user to try again (or try entering a different query).
@@ -13,9 +13,10 @@ This app allows a user to enter the name of a city, see the longitude/latitude o
 JavaScript, React, Netlify, Bootstrap, Axios
 
 ## Change Log
-<!-- Use this area to document the iterative changes made to your application as each feature is successfully implemented. Use time stamps. Here's an example:
+<!-- Use this area to document the iterative changes made to your application as each feature is successfully implemented. Use time stamps. Here's an example: -->
 
-01-01-2001 4:59pm - Application now has a fully-functional express server, with a GET route for the location resource. -->
+04-19-2021 4:00pm - Application now allows a user to enter a location in a form, and upon submitting, displays the closest location's name, longitude, latitude, and a static map of the surrounding area. Also shows an error message.
+
 
 ## Credit and Collaborations
 Coded alongside my classmates in Code Fellows seatt-c-301d73
@@ -28,13 +29,41 @@ Name of feature: Adding locations, map, error
 
 Estimate of time needed to complete: 3 hours
 
-Start time: 1:30
+Start time: 1:30pm
 
-Finish time: _____
+Finish time: 5:00pm
 
-Actual time needed to complete: _____
+Actual time needed to complete: 3 hours and 30 mins
+
+//
+
+Name of feature: Server setup
+
+Estimate of time needed to complete: 1 hour
+
+Start time: 2:00pm
+
+Finish time: 
+
+Actual time needed to complete: 
+
+//
+
+Name of feature: Weather placeholder
+
+Estimate of time needed to complete: 1 hour
+
+Start time: 
+
+Finish time: 
+
+Actual time needed to complete: 
 
 --- 
+
+# WRRC Image
+
+![image](src/WRRC2.JPG)
 
 # Getting Started with Create React App
 
