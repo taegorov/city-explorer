@@ -33,9 +33,13 @@ Start time: 1:30pm
 
 Finish time: 5:00pm
 
-Actual time needed to complete: 3 hours and 30 mins (last )
+Actual time needed to complete: 3 hours and 30 mins
 
 --- 
+
+# WRRC Image
+![image](src/WRRC.JPG)
+
 
 # Getting Started with Create React App
 
