@@ -19,7 +19,11 @@ class App extends React.Component {
       e.preventDefault();
       const API = `https://us1.locationiq.com/v1/search.php?key=${process.env.REACT_APP_CITY_KEY}&q=${this.state.searchQuery}&format=json`;
       const res = await axios.get(API);
+<<<<<<< HEAD
       // console.log(res.data[0])
+=======
+      console.log(res.data[0])
+>>>>>>> cef3a5d09be7be0e4caa7b3cbff7b67e6515a035
       this.setState({ location: res.data[0], error: false });
     } catch (error) {
       this.setState({ error: true });
@@ -38,7 +42,11 @@ class App extends React.Component {
           </form>
           {this.state.error &&
             <div class="alert alert-primary" role="alert">
+<<<<<<< HEAD
               Something went wrong
+=======
+              Enter a real city please...
+>>>>>>> cef3a5d09be7be0e4caa7b3cbff7b67e6515a035
           </div>
           }
           {this.state.location.place_id &&
