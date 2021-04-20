@@ -15,7 +15,7 @@ JavaScript, React, Netlify, Bootstrap, Axios
 ## Change Log
 <!-- Use this area to document the iterative changes made to your application as each feature is successfully implemented. Use time stamps. Here's an example: -->
 
-04-19-2021 4:00pm - Application now allows a user to enter a location in a form, and upon submitting, displays the closest location's name, longitude, latitude, and a static map of the surrounding area.
+04-19-2021 4:00pm - Application now allows a user to enter a location in a form, and upon submitting, displays the closest location's name, longitude, latitude, and a static map of the surrounding area. Also shows an error message.
 
 
 ## Credit and Collaborations
@@ -31,9 +31,9 @@ Estimate of time needed to complete: 3 hours
 
 Start time: 1:30pm
 
-Finish time: 4:00pm
+Finish time: 5:00pm
 
-Actual time needed to complete: 2 hours and 30 mins
+Actual time needed to complete: 3 hours and 30 mins (last )
 
 --- 
 
