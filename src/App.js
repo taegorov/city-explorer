@@ -2,6 +2,7 @@ import React from 'react';
 import axios from 'axios';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './index.css';
+import Weather from './Weather';
 
 
 class App extends React.Component {
@@ -22,6 +23,7 @@ class App extends React.Component {
       const res = await axios.get(API);
       // console.log(res.data[0])
       this.setState({ location: res.data[0], error: false });
+      this.getWeather();
     } catch (error) {
       this.setState({ error: true });
 
@@ -29,13 +31,15 @@ class App extends React.Component {
   }
   getWeather = async () => {
     try {
-      const weatherAPI = `${process.env.REACT_APP_BACKEND_URL}/weather?city=${this.state.searchsearchQuery}`;
+      const weatherAPI = `${process.env.REACT_APP_BACKEND_URL}/weather?city=${this.state.searchQuery}`;
       const weatherRes = await axios.get(weatherAPI);
-      const weather = weatherRes.data[0];
+      const weather = weatherRes.data;
+      console.log(weather);
       this.setState({ weather, error: false });
     } catch (error) {
       this.setState({ error: true });
-
+    }
+  }
 
   render() {
     const img_url = `https://maps.locationiq.com/v3/staticmap?key=${process.env.REACT_APP_CITY_KEY}&center=${this.state.location.lat},${this.state.location.lon}&size=${window.innerWidth}x300&format=jpg&zoom=12`;
@@ -62,6 +66,9 @@ class App extends React.Component {
           }
           <br></br>
           <img src={img_url} alt="location" id="map" />
+          <Weather weather={this.state.weather}/>
+
+
         </div>
       </>
     )
