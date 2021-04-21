@@ -41,7 +41,7 @@ Name of feature: Server setup
 
 Estimate of time needed to complete: 1 hour
 
-Start time: 2:00pm
+Start time: 2:**00pm**
 
 Finish time: 3:00pm
 
@@ -63,7 +63,9 @@ Actual time needed to complete: 3 hours
 
 # WRRC Image
 
-![image](src/WRRC2.JPG)
+![image1](src/WRRC.JPG)
+![image2](src/WRRC2.JPG)
+![image3](src/WRRC3.JPG)
 
 # Getting Started with Create React App
 
