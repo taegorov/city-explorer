@@ -43,9 +43,9 @@ Estimate of time needed to complete: 1 hour
 
 Start time: 2:00pm
 
-Finish time: 
+Finish time: 3:00pm
 
-Actual time needed to complete: 
+Actual time needed to complete: 1 hour
 
 //
 
@@ -53,11 +53,11 @@ Name of feature: Weather placeholder
 
 Estimate of time needed to complete: 1 hour
 
-Start time: 
+Start time: 3:00pm
 
-Finish time: 
+Finish time: 6:00pm
 
-Actual time needed to complete: 
+Actual time needed to complete: 3 hours
 
 --- 
 
