@@ -11,7 +11,6 @@ class Weather extends React.Component {
     return (
 
       this.props.weather.map((day, index) => (
-
         <WeatherDay day={day} index={index} />
       )
       )
