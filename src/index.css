@@ -43,3 +43,8 @@ button {
   border-style: solid;
   border-radius: 5px;
 }
+
+#overview {
+  font-size: 12px;
+  max-width: 700px;
+}
