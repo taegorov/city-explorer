@@ -94,6 +94,7 @@ Actual time needed to complete: 1 hour
 ![image1](src/WRRC.JPG)
 ![image2](src/WRRC2.JPG)
 ![image3](src/WRRC3.JPG)
+![image4](src/WRRC4.JPG)
 
 # Getting Started with Create React App
 
