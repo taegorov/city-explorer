@@ -3,6 +3,7 @@ import React from "react";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import ListGroup from 'react-bootstrap/ListGroup';
 
+// alt movie url: https://image.tmdb.org/t/p/w500
 
 class Movie extends React.Component {
 
@@ -22,8 +23,7 @@ class Movie extends React.Component {
             Overview: {movie.overview}
           </p>
           <p id="movieImage">
-            <img src={`https://www.themoviedb.org/t/p/w300_and_h450_bestv2/${movie.image}`}>
-           </img>
+            <img src={`https://www.themoviedb.org/t/p/w300_and_h450_bestv2/${movie.image}`} alt="image" />
           </p>
         </ListGroup.Item>
 
