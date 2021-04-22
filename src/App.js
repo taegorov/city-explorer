@@ -50,6 +50,7 @@ class App extends React.Component {
   }
   getMovie = async () => {
     try {
+
       // this will change depending on what's in the .env file
       const movieAPI = `${process.env.REACT_APP_BACKEND_URL}/movies` 
       const query = {
