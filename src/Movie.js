@@ -13,13 +13,17 @@ class Movie extends React.Component {
 
         <ListGroup.Item key={index} as="li" active>
           <h2>
-          {movie.title} is the Title
+            Title: {movie.title}
           </h2>
           <p>
-          {movie.popularity} is the Rating
+            Rating: {movie.popularity}
           </p>
-          <p id ="overview">
-          {movie.overview} is the Overview
+          <p id="overview">
+            Overview: {movie.overview}
+          </p>
+          <p id="movieImage">
+            <img src={`https://www.themoviedb.org/t/p/w300_and_h450_bestv2/${movie.image}`}>
+           </img>
           </p>
         </ListGroup.Item>
 

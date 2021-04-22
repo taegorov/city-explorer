@@ -12,7 +12,8 @@ class Weather extends React.Component {
 
       this.props.weather.map((day, index) => (
         <ListGroup.Item key={index} as="li" active>
-          {day.time} is the day and {day.forecast} is the forecast
+          Day: {day.time + ' '}
+          Forecast: {day.forecast}
         </ListGroup.Item>
       )
       )
