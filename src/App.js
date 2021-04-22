@@ -3,6 +3,7 @@ import axios from 'axios';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './index.css';
 import Weather from './Weather';
+import Movie from './Movie';
 
 
 class App extends React.Component {
@@ -12,6 +13,7 @@ class App extends React.Component {
       searchQuery: '',
       location: {},
       weather: [],
+      movies: [],
       error: false
     }
   }
@@ -24,6 +26,7 @@ class App extends React.Component {
       // console.log(res.data[0])
       this.setState({ location: res.data[0], error: false });
       this.getWeather();
+      this.getMovie();
     } catch (error) {
       this.setState({ error: true });
 
@@ -31,11 +34,31 @@ class App extends React.Component {
   }
   getWeather = async () => {
     try {
-      const weatherAPI = `${process.env.REACT_APP_BACKEND_URL}/weather?city=${this.state.searchQuery}`;
-      const weatherRes = await axios.get(weatherAPI);
+      const weatherAPI = `${process.env.REACT_APP_BACKEND_URL}/weather`
+      const query = {
+        lon: this.state.location.lon,
+        lat: this.state.location.lat
+      };
+      const weatherRes = await axios.get(weatherAPI, {params : query});
       const weather = weatherRes.data;
-      console.log(weather);
+      // console.log(weather);
       this.setState({ weather, error: false });
+
+    } catch (error) {
+      this.setState({ error: true });
+    }
+  }
+  getMovie = async () => {
+    try {
+      const movieAPI = `${process.env.REACT_APP_BACKEND_URL}/movies`
+      const query = {
+        cityName: this.state.searchQuery
+      };
+      const movieRes = await axios.get(movieAPI, {params : query});
+      const movies = movieRes.data;
+      console.log(movies);
+      this.setState({ movies, error: false });
+
     } catch (error) {
       this.setState({ error: true });
     }
@@ -66,8 +89,8 @@ class App extends React.Component {
           }
           <br></br>
           <img src={img_url} alt="location" id="map" />
-          <Weather weather={this.state.weather}/>
-
+          <Weather weather={this.state.weather} />
+          <Movie movie={this.state.movies} />
 
         </div>
       </>

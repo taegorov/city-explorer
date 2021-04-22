@@ -17,6 +17,10 @@ JavaScript, React, Netlify, Bootstrap, Axios
 
 04-19-2021 4:00pm - Application now allows a user to enter a location in a form, and upon submitting, displays the closest location's name, longitude, latitude, and a static map of the surrounding area. Also shows an error message.
 
+4-20-2021 6:00pm - Application now renders a placeholder for weather below the map
+
+4-21-2021 5:00pm - Application now renders dynamic weather below the map depending on the location entered by the user. The app also displays the top 20 movies with the city/area name in its title, along with the movie's popularity, name, and description.
+
 
 ## Credit and Collaborations
 Coded alongside my classmates in Code Fellows seatt-c-301d73
@@ -41,7 +45,7 @@ Name of feature: Server setup
 
 Estimate of time needed to complete: 1 hour
 
-Start time: 2:**00pm**
+Start time: 2:00pm
 
 Finish time: 3:00pm
 
@@ -58,6 +62,30 @@ Start time: 3:00pm
 Finish time: 6:00pm
 
 Actual time needed to complete: 3 hours
+
+//
+
+Name of feature: Dynamic weather
+
+Estimate of time needed to complete: 1 hour
+
+Start time: 2:00pm
+
+Finish time: 4:00pm
+
+Actual time needed to complete: 2 hours
+
+// 
+
+Name of feature: Movie search
+
+Estimate of time needed to complete: 1 hour
+
+Start time: 4:00pm
+
+Finish time: 5:00pm
+
+Actual time needed to complete: 1 hour
 
 --- 
 
