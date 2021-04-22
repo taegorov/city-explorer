@@ -23,7 +23,7 @@ class Movie extends React.Component {
             Overview: {movie.overview}
           </p>
           <p id="movieImage">
-            <img src={`https://www.themoviedb.org/t/p/w300_and_h450_bestv2/${movie.image}`} alt="here lies an image" />
+            <img src={`https://www.themoviedb.org/t/p/w300_and_h450_bestv2/${movie.image}`} alt="here lies a stationary movie" />
           </p>
         </ListGroup.Item>
 
