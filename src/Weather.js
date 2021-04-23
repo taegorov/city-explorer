@@ -11,7 +11,7 @@ class Weather extends React.Component {
     return (
 
       this.props.weather.map((day, index) => (
-        <WeatherDay day={day} index={index} />
+        <WeatherDay day={day} key={index} />
       )
       )
     )
@@ -20,10 +20,3 @@ class Weather extends React.Component {
 
 
 export default Weather;
-
-
-// // this goes above
-// this.props.weather.map((day, index) => (
-//   <WeatherDay dayInfo={day} index={index} />
-//   ))
-

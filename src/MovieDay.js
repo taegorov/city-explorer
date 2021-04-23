@@ -6,6 +6,7 @@ class MovieDay extends React.Component {
 
   render() {
     return (
+
   <ListGroup.Item key={this.props.index} as="li" action variant="dark" active>
     <h2>
       Title: {this.props.movie.title}
@@ -16,9 +17,8 @@ class MovieDay extends React.Component {
     <p id="overview">
       Overview: {this.props.movie.overview}
     </p>
-    <p id="movieImage">
-      <img src={`https://www.themoviedb.org/t/p/w300_and_h450_bestv2/${this.props.movie.image}`} alt="here lies a stationary movie" />
-    </p>
+   <img src={`https://www.themoviedb.org/t/p/w300_and_h450_bestv2/${this.props.movie.image}`} alt="here lies a stationary movie" />
+
   </ListGroup.Item>
 
   )
