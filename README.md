@@ -1,7 +1,7 @@
 # City Explorer
 
 **Author**: Tim Egorov
-**Version**: 1.2.0 (increment the patch/fix version number if you make more commits past your first submission)
+**Version**: 1.4.0 (increment the patch/fix version number if you make more commits past your first submission)
 
 ## Overview
 This app allows a user to enter the name of a city, see the longitude/latitude of that city, and view a map of that location. The app will also display an error message, prompting the user to try again (or try entering a different query).
@@ -20,6 +20,8 @@ JavaScript, React, Netlify, Bootstrap, Axios
 4-20-2021 6:00pm - Application now renders a placeholder for weather below the map
 
 4-21-2021 5:00pm - Application now renders dynamic weather below the map depending on the location entered by the user. The app also displays the top 20 movies with the city/area name in its title, along with the movie's popularity, name, and description.
+
+4-22-2021 5:00pm - Application now lives online on deployed sites (netlify/heroku). Refactored to separate MovieDay and WeatherDay from Movie and Weather, respectively.
 
 
 ## Credit and Collaborations
@@ -78,6 +80,18 @@ Actual time needed to complete: 2 hours
 // 
 
 Name of feature: Movie search
+
+Estimate of time needed to complete: 1 hour
+
+Start time: 4:00pm
+
+Finish time: 5:00pm
+
+Actual time needed to complete: 1 hour
+
+//
+
+Name of feature: Deploying to Netlify/Heroku
 
 Estimate of time needed to complete: 1 hour
 
