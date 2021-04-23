@@ -14,7 +14,7 @@ class App extends React.Component {
       location: {},
       weather: [],
       movies: [],
-      error: false
+      error: false,
     }
   }
 
@@ -24,7 +24,8 @@ class App extends React.Component {
       const API = `https://us1.locationiq.com/v1/search.php?key=${process.env.REACT_APP_CITY_KEY}&q=${this.state.searchQuery}&format=json`;
       const res = await axios.get(API);
       // console.log(res.data[0])
-      this.setState({ location: res.data[0], error: false });
+      const location = res.data[0];
+      this.setState({ location, error: false });
       this.getWeather();
       this.getMovie();
     } catch (error) {
@@ -34,40 +35,41 @@ class App extends React.Component {
   }
   getWeather = async () => {
     try {
-      const baseURL = `https://city-explorer-timegorov.herokuapp.com`
+      const baseURL = `http://localhost:3002`
       const weatherAPI = `${baseURL}/weather`
       const query = {
         lon: this.state.location.lon,
         lat: this.state.location.lat
       };
-      const weatherRes = await axios.get(weatherAPI, {params : query});
+      const weatherRes = await axios.get(weatherAPI, { params: query });
       const weather = weatherRes.data;
       // console.log(weather);
-      this.setState({ weather, error: false });
+      this.setState({ weather });
 
     } catch (error) {
-      this.setState({ error: true });
+      console.log('error, getWeather');
     }
   }
   getMovie = async () => {
     try {
-      
-      const baseURL = `https://city-explorer-timegorov.herokuapp.com`
+
+      const baseURL = `http://localhost:3002`
       const movieAPI = `${baseURL}/movies`
       const query = {
         cityName: this.state.searchQuery
       };
-      const movieRes = await axios.get(movieAPI, {params : query});
+      const movieRes = await axios.get(movieAPI, { params: query });
       const movies = movieRes.data;
       console.log(movies);
-      this.setState({ movies, error: false });
+      this.setState({ movies });
 
     } catch (error) {
-      this.setState({ error: true });
+      console.log('error, getMovie');
     }
   }
 
   render() {
+    // move this inside line 94
     const img_url = `https://maps.locationiq.com/v3/staticmap?key=${process.env.REACT_APP_CITY_KEY}&center=${this.state.location.lat},${this.state.location.lon}&size=${window.innerWidth}x300&format=jpg&zoom=12`;
     return (
       <>
@@ -81,15 +83,13 @@ class App extends React.Component {
               Something went wrong
           </div>
           }
-          {this.state.location.place_id &&
-            <h2>The city is: {this.state.location.display_name}</h2>
-          }
-          {this.state.location.place_id &&
-            <h3>Latitude is: {this.state.location.lat}</h3>
-          }
-          {this.state.location.place_id &&
-            <h3>Longitude is: {this.state.location.lon}</h3>
-          }
+          {this.state.location.place_id && (
+            <>
+              <h2>The city is: {this.state.location.display_name}</h2>
+              <h3>Latitude is: {this.state.location.lat}</h3>
+              <h3>Longitude is: {this.state.location.lon}</h3>
+            </>
+          )}
           <br></br>
           <img src={img_url} alt="location" id="map" />
           <Weather weather={this.state.weather} />

@@ -13,7 +13,7 @@ class Movie extends React.Component {
     return (
 
       this.props.movie.map((movie, index) => (
-        <MovieDay movie={movie} index={index} />
+        <MovieDay movie={movie} key={index} />
 
       )
       )
