@@ -34,7 +34,8 @@ class App extends React.Component {
   }
   getWeather = async () => {
     try {
-      const weatherAPI = `${process.env.REACT_APP_BACKEND_URL}/weather`
+      const baseURL = `https://city-explorer-timegorov.herokuapp.com`
+      const weatherAPI = `${baseURL}/weather`
       const query = {
         lon: this.state.location.lon,
         lat: this.state.location.lat
@@ -50,9 +51,9 @@ class App extends React.Component {
   }
   getMovie = async () => {
     try {
-
-      // this will change depending on what's in the .env file
-      const movieAPI = `${process.env.REACT_APP_BACKEND_URL}/movies` 
+      
+      const baseURL = `https://city-explorer-timegorov.herokuapp.com`
+      const movieAPI = `${baseURL}/movies`
       const query = {
         cityName: this.state.searchQuery
       };
