@@ -23,10 +23,10 @@ JavaScript, React, Netlify, Bootstrap, Axios
 
 4-22-2021 5:00pm - Application now lives online on deployed sites (netlify/heroku). Refactored to separate MovieDay and WeatherDay from Movie and Weather, respectively.
 
+4-23-2021 5:00pm - Application now stores recently stored locations in local cache, preventing the browser from reaching out to the API if the same location has been searched in the past 5 seconds.
 
 ## Credit and Collaborations
 Coded alongside my classmates in Code Fellows seatt-c-301d73
-
 
 --- 
 # Time Estimates
@@ -100,6 +100,18 @@ Start time: 4:00pm
 Finish time: 5:00pm
 
 Actual time needed to complete: 1 hour
+
+//
+
+Name of feature: Stores recent searches to cache
+
+Estimate of time needed to complete: 2 hour
+
+Start time: 1:30pm
+
+Finish time: 5:45pm
+
+Actual time needed to complete: 4 hours and 15 minutes
 
 --- 
 
